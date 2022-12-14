@@ -5,7 +5,7 @@ import SpiceItem from "./SpiceItem";
 
 function App() {
   const [spices, setSpices] = useState([]);
-
+  console.log(spices)
   useEffect(() => {
     fetch("/spices")
       .then((r) => r.json())
